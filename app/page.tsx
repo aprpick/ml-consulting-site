@@ -1,65 +1,112 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Machine Learning & AI Consulting
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+            We help companies build AI projects through development and strategy
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      {/* Client Logos Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-center text-gray-600 mb-8">Trusted by leading companies</p>
+          <div className="flex justify-center items-center gap-16 flex-wrap">
+            <img
+              src="/vertex_solutions.png"
+              alt="Vertex Solutions"
+              className="h-36 w-54 object-contain"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <img
+              src="/horizon_analytics.png"
+              alt="Horizon Analytics"
+              className="h-32 w-48 object-contain"
+            />
+            <img
+              src="/quantum_dynamics.png"
+              alt="Quantum Dynamics"
+              className="h-32 w-48 object-contain"
+            />
+          </div>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">What We Offer</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Service 1 */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">MVP Development</h3>
+              <p className="text-gray-600">
+                Build and prove out your AI solution quickly with our development services
+              </p>
+            </div>
+            {/* Service 2 */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Production ML Software</h3>
+              <p className="text-gray-600">
+                Custom machine learning software from MVPs to full enterprise products
+              </p>
+            </div>
+            {/* Service 3 */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">ML Consulting</h3>
+              <p className="text-gray-600">
+                Expert guidance to implement AI effectively and avoid project pitfalls
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">What Clients Say</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <p className="text-gray-700 mb-4 italic">
+                "The AI system developed works well and reduces lots of laborious manpower. 
+                Great success in project execution."
+              </p>
+              <div className="flex items-center">
+                <div>
+                  <p className="font-bold">John Smith</p>
+                  <p className="text-gray-600 text-sm">CEO, Tech Corp</p>
+                </div>
+              </div>
+            </div>
+            {/* Testimonial 2 */}
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <p className="text-gray-700 mb-4 italic">
+                "Expert knowledge and excellent team to implement whatever you need done. 
+                Highly recommend their ML consulting services."
+              </p>
+              <div className="flex items-center">
+                <div>
+                  <p className="font-bold">Sarah Johnson</p>
+                  <p className="text-gray-600 text-sm">CTO, Data Systems Inc</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <p className="text-gray-400">© 2025 ML Consulting. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  )
 }
