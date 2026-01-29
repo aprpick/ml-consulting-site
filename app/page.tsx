@@ -21,7 +21,7 @@ export default function Home() {
             <img
               src="/vertex_solutions.png"
               alt="Vertex Solutions"
-              className="h-36 w-54 object-contain"
+              className="h-32 w-48 object-contain"
             />
             <img
               src="/horizon_analytics.png"
