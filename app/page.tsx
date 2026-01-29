@@ -31,7 +31,7 @@ export default function Home() {
             <img
               src="/quantum_dynamics.png"
               alt="Quantum Dynamics"
-              className="h-28 w-42 object-contain"
+              className="h-32 w-48 object-contain"
             />
           </div>
         </div>
