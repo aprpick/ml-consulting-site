@@ -10,6 +10,12 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
             We help companies build AI projects through development and strategy
           </p>
+          <a 
+            href="/contact"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold inline-block"
+          >
+            Let's Talk
+          </a>
         </div>
       </section>
 
@@ -17,22 +23,28 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-center text-gray-600 mb-8">Trusted by leading companies</p>
-          <div className="flex justify-center items-center gap-16 flex-wrap">
-            <img
-              src="/vertex_solutions.png"
-              alt="Vertex Solutions"
-              className="h-32 w-48 object-contain"
-            />
-            <img
-              src="/horizon_analytics.png"
-              alt="Horizon Analytics"
-              className="h-32 w-48 object-contain"
-            />
-            <img
-              src="/quantum_dynamics.png"
-              alt="Quantum Dynamics"
-              className="h-32 w-48 object-contain"
-            />
+          <div className="flex justify-center items-center gap-12 flex-wrap mx-auto max-w-4xl">
+            <div className="flex items-center justify-center h-24 w-40">
+              <img
+                src="/vertex_solutions.png"
+                alt="Vertex Solutions"
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center h-24 w-40">
+              <img
+                src="/horizon_analytics.png"
+                alt="Horizon Analytics"
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center h-24 w-40">
+              <img
+                src="/quantum_dynamics.png"
+                alt="Quantum Dynamics"
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -66,6 +78,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Testimonials Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
@@ -104,7 +117,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-gray-400">© 2025 Apex ML Consulting. All rights reserved.</p>
+          <p className="text-gray-400">© 2025 Apex ML Solutions Ltd. All rights reserved.</p>
         </div>
       </footer>
     </main>
